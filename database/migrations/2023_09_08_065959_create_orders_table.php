@@ -17,9 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('no_pesanan',20);
             $table->dateTime('tanggal');
-            $table->string('nm_pelanggan', 50);
+            $table->string('nm_supplier', 50);
             $table->string('nm_produk', 50);
             $table->float('total');
+            $table->timestamps();
         });
     }
 
